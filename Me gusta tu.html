@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For Taniya ❤️</title>
+  <link rel="stylesheet" href="love.css">
+</head>
+<body> 
+  <h1>For You, Taniya 💖</h1>
+
+  <div class="content">
+    <img src="photo/vv.png" alt="Your photo with Taniya" class="photo">
+    <p>Double click on the hard below
+        👇🏻
+    </p>
+  </div>
+
+  <div class="heart" onclick="showMessage()">💗</div>
+
+  <div id="secretMessage">
+    I love You 💖<br>
+    You are the most beautiful girl I've ever seen in my life.
+  </div>
+
+  <!-- Audio element without autoplay -->
+  <audio id="loveAudio" loop>
+    <source src="photo/Ee Kshanam Swayamvaram Song Ringtone Download - MobCup.Com.Co.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <div class="falling-hearts">
+    <div class="heart-fall">💖</div>
+    <div class="heart-fall">💖</div>
+    <div class="heart-fall">💖</div>
+  </div>
+
+  <script>
+    function showMessage() {
+      const msg = document.getElementById('secretMessage');
+      msg.style.display = 'block';
+      msg.classList.add('fade-in');
+
+      const audio = document.getElementById('loveAudio');
+      audio.play().catch(err => {
+        console.error("Autoplay failed:", err);
+      });
+    }
+  </script>
+
+  <!-- Footer with watermark -->
+  <footer style="margin-top: 40px; font-size: 0.9rem; color: #999; text-align: center;">
+    Crafted with ❤️ by Ronit & ChatGPT
+  </footer>
+  
+</body>
+</html>
